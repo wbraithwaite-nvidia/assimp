@@ -914,6 +914,7 @@ ELSE()
     ../contrib/pugixml/src/pugiconfig.hpp
     ../contrib/pugixml/src/pugixml.hpp
   )
+  add_compile_definitions(PUGIXML_HEADER_ONLY)
   INCLUDE_DIRECTORIES("../contrib/pugixml/src")
   SOURCE_GROUP( Contrib\\Pugixml FILES ${Pugixml_SRCS})
 ENDIF()
